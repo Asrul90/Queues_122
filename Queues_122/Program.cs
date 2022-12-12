@@ -30,6 +30,19 @@ namespace Queues_122
             /* this following statement checks whether the queue is empty. if the queue is empty
              * then the value of the REAR and FRONT variables is set to 0*/
 
+            if (FRONT == -1)
+            {
+                FRONT= 1;
+                REAR = 1;
+            }
+            else
+            {
+                /* if rear is at the llast position of the array, then the value of 
+                 * rear is set to 0 that corresponds to the first position of the array. */
+                if (REAR == max -1)
+                    REAR= 0;
+                
+            }
         }
         static void Main(string[] args)
         {
