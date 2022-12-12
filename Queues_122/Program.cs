@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Queues_122
 {
+
     internal class Program
     {
         static void Main(string[] args)
