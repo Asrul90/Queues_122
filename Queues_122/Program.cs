@@ -56,7 +56,9 @@ namespace Queues_122
                 Console.WriteLine("queue underflow\n");
                 return;
             }
-            Console.WriteLine("\nThe element deeted ");
+            Console.WriteLine("\nThe element deeted from the queue is: " + queue_array[FRONT] 
+                + "\n");
+
 
         }
         static void Main(string[] args)
