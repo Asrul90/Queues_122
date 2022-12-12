@@ -41,8 +41,23 @@ namespace Queues_122
                  * rear is set to 0 that corresponds to the first position of the array. */
                 if (REAR == max -1)
                     REAR= 0;
-                
+                else
+                    /* if rear is not at the last position then is value is incremented by one */
+                    REAR = REAR +1;
             }
+            /* once the position of rear is determined, the element is added at its proper place */
+            queue_array[REAR] = element;
+        }
+        public void remove()
+        {
+            /* cheks wheather the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("queue underflow\n");
+                return;
+            }
+            Console.WriteLine("\nThe element deeted ");
+
         }
         static void Main(string[] args)
         {
