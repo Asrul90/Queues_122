@@ -169,7 +169,7 @@ namespace Queues_122
                 }
                 catch(Exception e)
                 {
-                    Console.WriteLine(" check the values entered.");
+                    Console.WriteLine(" check the values entered. ");
                 }
             }
         }
