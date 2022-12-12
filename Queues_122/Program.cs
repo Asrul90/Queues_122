@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,6 +78,24 @@ namespace Queues_122
                 }
             }
 
+            
+        }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            /* checks if the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("queue is empty\n");
+                return;
+
+            }
+            Console.WriteLine("\nElement is the queue are ................\n");
+            if (FRONT_position <=REAR_position)
+            {
+
+            }
         }
         static void Main(string[] args)
         {
