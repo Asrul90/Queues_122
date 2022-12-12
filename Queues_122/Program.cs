@@ -110,10 +110,68 @@ namespace Queues_122
                     Console.WriteLine(queue_array[FRONT_position] + "    ");
                     FRONT_position++;
                 }
+                /* se the front position to the first element of the array. */
+                FRONT_position = 0;
+                /* traverse the array till the last element present in the queue. */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "    ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
         {
+            Program queue = new Program();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("menu");
+                    Console.WriteLine("1. implement isert operation");
+                    Console.WriteLine("2. implement delete operation");
+                    Console.WriteLine("3. display values");
+                    Console.WriteLine("4. exit");
+                    Console.Write("\n enter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.Read());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("enter a number:  ");
+                                int num = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+
+                            }
+                            break;
+                        case '2':
+                            {
+                                queue.remove();
+                            }
+                            break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("invalid option !!");
+                            }
+                            break;
+                    }
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(" check the values entered.");
+                }
+            }
         }
     }
 }
