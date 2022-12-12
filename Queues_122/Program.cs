@@ -102,6 +102,15 @@ namespace Queues_122
                 }
                 Console.WriteLine();
             }
+            else
+            {
+                /* treverse the queue till the last position of the array. */
+                while (FRONT_position <= max - 1)
+                {
+                    Console.WriteLine(queue_array[FRONT_position] + "    ");
+                    FRONT_position++;
+                }
+            }
         }
         static void Main(string[] args)
         {
