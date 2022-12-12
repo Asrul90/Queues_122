@@ -70,6 +70,11 @@ namespace Queues_122
                  * of front is set to 0 i.e to the first element of the array. */
                 if (FRONT == max -1)
                     FRONT = 0;
+                else
+                {
+                    /* front is icremeted by one if it is not the first elemnt of array. */
+                    FRONT = FRONT+1;
+                }
             }
 
         }
